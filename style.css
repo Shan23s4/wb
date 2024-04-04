@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100vh;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.togbtn {
+  height: 30px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 550;
+  cursor: pointer;
+  position: relative;
+  bottom: 65px;
+  left: -1vw;
+  color: white;
+  gap: 10px;
+  box-shadow:inset 0 7px 30px rgba(0, 0, 0, .1) 
+            inset 0 8px 20px rgba(0, 0, 0, .1),
+            inset 0 -4px 4px rgba(0, 0, 0, .1);
+}
+#text {
+  position: relative;
+  right: -4px;
+  bottom: 2px;
+}
+img {
+  position: relative;
+  left: 6px;
+  top: 4px;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+body {
+  transition: background 0.4s, color 0.4s;
+}
+.ctext {
+  position: relative;
+  top: 200px;
+  left: 10vw;
+  color: rgb(8, 88, 137);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -1vw;
+  bottom: 40px;
+  gap: 60px;
+  font-size: medium;
+}
+
+nav  li {
+  color: rgb(120, 22, 22);
+  list-style: none;
+}
+.logo {
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+  border-radius: 200px;
+  color: blue;
+}
+nav {
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(255, 249, 246);
+  box-shadow: 0px 0px 30px;
+  cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 500px) {
+   body{
+       width: 320vw;
+    }
+    nav{
+      height: 80px;
+      width: 320vw;
+      background-color: rgb(177, 208, 209);
+    }
+    nav ul {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    nav a {
+        position: relative;
+        left: 60vw;
+        padding: 10px 15px;
+        font-size: 24px;
+        gap: 0;
+    }
+    .togbtn {
+        bottom: 70px;
+              
+    }
+    .ctext {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 20px;
+    }
+}
